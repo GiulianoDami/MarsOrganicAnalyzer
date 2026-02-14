@@ -1,0 +1,25 @@
+{
+  "name": "marsorganicanalyzer",
+  "version": "1.0.0",
+  "description": "A TypeScript tool for analyzing and distinguishing between biotic and abiotic origins of organic compounds detected on Mars",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "mars",
+    "organic",
+    "analysis",
+    "biotic",
+    "abiotic",
+    "typescript"
+  ],
+  "author": "Mars Science Team",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "@types/node": "^20.8.10"
+  }
+}
