@@ -1,0 +1,40 @@
+{
+    "language": "TypeScript",
+    "dependency_file": "package.json",
+    "dependencies": ["typescript", "@types/node"],
+    "files": [
+        {
+            "path": "src/OrganicCompoundAnalyzer.ts",
+            "description": "Main analyzer class for determining compound origins",
+            "exports": ["class OrganicCompoundAnalyzer"]
+        },
+        {
+            "path": "src/models/Compound.ts",
+            "description": "Data model for organic compounds",
+            "exports": ["interface Compound"]
+        },
+        {
+            "path": "src/services/OriginProbabilityService.ts",
+            "description": "Service for calculating probability of biotic vs abiotic origins",
+            "exports": ["class OriginProbabilityService"]
+        },
+        {
+            "path": "src/services/MeteoriteImpactSimulator.ts",
+            "description": "Simulates meteorite impact formation pathways",
+            "exports": ["class MeteoriteImpactSimulator"]
+        },
+        {
+            "path": "src/utils/StructureAnalyzer.ts",
+            "description": "Analyzes molecular structures for biotic signatures",
+            "exports": ["class StructureAnalyzer"]
+        },
+        {
+            "path": "src/index.ts",
+            "description": "Entry point and public API export",
+            "imports_from_other_files": [
+                "OrganicCompoundAnalyzer.ts",
+                "models/Compound.ts"
+            ]
+        }
+    ]
+}
